@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - name: Publishing to Github Pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/igormcsouza/curriculum-vitae.git
           npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
