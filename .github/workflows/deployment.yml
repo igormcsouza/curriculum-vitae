@@ -1,0 +1,16 @@
+name: CV Deployment Pipeline
+
+on:
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  deploy_to_gh_pages:
+    runs_on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - run: npm run deploy
