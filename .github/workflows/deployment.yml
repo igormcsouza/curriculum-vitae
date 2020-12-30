@@ -5,19 +5,21 @@ on:
     branches: [ master ]
 
 jobs:
-  deploy:
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        env:
-          EMAIL: igormcsouza@gmail.com
-          NAME: Igor Souza
-      - uses: actions/setup-node@v1
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Publishing to Github Pages
+      - name: Install dependencies
+        run: npm ci
+      - name: Publish github pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/igormcsouza/curriculum-vitae.git
-          npx gh-pages -d build -u "github-actions-bot <support+actions@github.com>"
+          npm run gh-pages -- -u "github-actions-bot <support+actions@github.com>"
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
