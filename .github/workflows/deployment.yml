@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      env:
-          EMAIL: igormcsouza@gmail.com
-          NAME: Igor Souza
+        env:
+            EMAIL: igormcsouza@gmail.com
+            NAME: Igor Souza
       - uses: actions/setup-node@v1
         with:
           node-version: 12
