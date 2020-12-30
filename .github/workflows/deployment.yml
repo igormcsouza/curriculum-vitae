@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         env:
-            EMAIL: igormcsouza@gmail.com
-            NAME: Igor Souza
+          EMAIL: igormcsouza@gmail.com
+          NAME: Igor Souza
       - uses: actions/setup-node@v1
         with:
           node-version: 12
