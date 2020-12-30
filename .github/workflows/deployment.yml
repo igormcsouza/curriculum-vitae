@@ -1,4 +1,4 @@
-name: CV Deployment Pipeline
+name: deploy
 
 on:
   pull_request:

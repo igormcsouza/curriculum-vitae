@@ -1,10 +1,6 @@
 # My own Curriculum Vitae
 
-![CV Deployment Pipeline](https://github.com/igormcsouza/curriculum-vitae/workflows/CV%20Deployment%20Pipeline/badge.svg)
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![deploy](https://github.com/igormcsouza/curriculum-vitae/workflows/deploy/badge.svg)
 
 ## Available Scripts
 
