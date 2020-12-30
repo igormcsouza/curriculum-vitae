@@ -2,6 +2,14 @@
 
 ![deploy](https://github.com/igormcsouza/curriculum-vitae/workflows/deploy/badge.svg)
 
+My profile ...
+
+## Deploy to Github Pages
+
+There is this very good tutorial at 
+[create-react-app](https://create-react-app.dev/docs/deployment/#github-pages).
+Just follow it and everything should work great locally.
+
 ## Available Scripts
 
 In the project directory, you can run:
