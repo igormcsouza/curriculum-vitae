@@ -15,6 +15,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: git config --global user.email $EMAIL
+      - run: git config --global user.name $NAME
       - run: git remote set-url origin https://$NAME:${{ secrets.PASSWORD }}@github.com/igormcsouza/curriculum-vitae.git
       - run: npm ci
       - run: npm run deploy
