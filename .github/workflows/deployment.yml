@@ -5,12 +5,16 @@ on:
     branches: [ master ]
 
 jobs:
-  deploy_to_gh_pages:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      env:
+          EMAIL: igormcsouza@gmail.com
+          NAME: Igor Souza
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: git remote set-url origin https://$NAME:${{ secrets.PASSWORD }}@github.com/igormcsouza/curriculum-vitae.git
       - run: npm ci
       - run: npm run deploy
