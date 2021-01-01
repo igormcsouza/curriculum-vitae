@@ -2,6 +2,14 @@
 
 ![deploy](https://github.com/igormcsouza/curriculum-vitae/workflows/deploy/badge.svg)
 
+My profile ...
+
+## Deploy to Github Pages
+
+There is this very good tutorial at 
+[create-react-app](https://create-react-app.dev/docs/deployment/#github-pages).
+Just follow it and everything should work great locally.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -39,8 +47,23 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## `npm run deploy`
+
+It runs the publishing script to upload the build to the Github Pages, it runs
+automatically `npm run predeploy` which builds the application so it can deploy
+that to Github.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Known Issues
+
+### Publish using Github Actions
+
+Because actions does not have the correct username and credentials, publishing
+may be a really pain in the back side! After some research I found 
+[this](https://github.com/tschaub/gh-pages/issues/345) issue which helped me a 
+lot.
