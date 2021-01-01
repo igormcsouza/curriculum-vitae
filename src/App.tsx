@@ -61,7 +61,7 @@ function App() {
           justify="center"
           alignItems="stretch"
           direction="row"
-          spacing={2}
+          spacing={1}
         >
           <Grid item xs={12} md={4} lg={4} xl={4}>
             <ProfileBox />
