@@ -1,5 +1,5 @@
 {
-  "name": "curriculum-vitae",
+  "name": "resume",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://igormcsouza.github.io/resume",
@@ -45,5 +45,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
