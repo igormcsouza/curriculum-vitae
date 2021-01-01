@@ -1,5 +1,6 @@
 # My own Curriculum Vitae
 
+![integration](https://github.com/igormcsouza/resume/workflows/integration/badge.svg)
 ![deploy](https://github.com/igormcsouza/curriculum-vitae/workflows/deploy/badge.svg)
 
 My profile ...
