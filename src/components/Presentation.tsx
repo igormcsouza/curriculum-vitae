@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: "center",
       justifyContent: "space-between",
       height: "100%",
+      margin: "35px 0px 35px 0px",
     },
     innerText: {
       display: "flex",
