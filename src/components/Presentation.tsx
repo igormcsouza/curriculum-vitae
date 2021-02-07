@@ -1,5 +1,12 @@
 import React from "react";
-import { createStyles, IconButton, makeStyles, Theme } from "@material-ui/core";
+import {
+  Container,
+  createStyles,
+  Grid,
+  IconButton,
+  makeStyles,
+  Theme,
+} from "@material-ui/core";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -18,7 +25,7 @@ const useStyles = makeStyles((theme: Theme) =>
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      maxWidth: "600px",
+      // maxWidth: "600px",
       textAlign: "center",
     },
     iconsDisposition: {
@@ -33,8 +40,8 @@ const Presentation: React.FC<{}> = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.outerBox}>
-      <div>
+    <Grid className={classes.outerBox} container spacing={3}>
+      <Grid item xs={12} sm={12} lg={6}>
         <div className={classes.innerText}>
           <h1>Hello! I'm Igor Souza</h1>
           <h2>I'm a FullStack Developer and Data Scientist.</h2>
@@ -66,8 +73,8 @@ const Presentation: React.FC<{}> = () => {
             />
           </IconButton>
         </div>
-      </div>
-      <div>
+      </Grid>
+      <Grid item xs={false} sm={false} lg={6}>
         <img
           width="600px"
           height="600px"
@@ -75,8 +82,8 @@ const Presentation: React.FC<{}> = () => {
           src="https://github.com/igormcsouza.png"
           alt="Igor Souza"
         />
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   );
 };
 

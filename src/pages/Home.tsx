@@ -1,5 +1,5 @@
 import React from "react";
-import { createStyles, makeStyles, Theme } from "@material-ui/core";
+import { Container, createStyles, makeStyles, Theme } from "@material-ui/core";
 import Presentation from "../components/Presentation";
 import Skill from "../components/Skill";
 
@@ -15,10 +15,10 @@ const Home: React.FC<{}> = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.home}>
+    <Container className={classes.home} fixed>
       <Presentation />
       <Skill />
-    </div>
+    </Container>
   );
 };
 
