@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Container,
   createStyles,
   Grid,
   IconButton,
@@ -19,13 +18,12 @@ const useStyles = makeStyles((theme: Theme) =>
       alignItems: "center",
       justifyContent: "space-between",
       height: "100%",
-      margin: "35px 0px 35px 0px",
+      margin: "5px 0px",
     },
     innerText: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      // maxWidth: "600px",
       textAlign: "center",
     },
     iconsDisposition: {
@@ -41,7 +39,7 @@ const Presentation: React.FC<{}> = () => {
 
   return (
     <Grid className={classes.outerBox} container spacing={3}>
-      <Grid item xs={12} sm={12} lg={6}>
+      <Grid item xs={12} lg={6}>
         <div className={classes.innerText}>
           <h1>Hello! I'm Igor Souza</h1>
           <h2>I'm a FullStack Developer and Data Scientist.</h2>
@@ -74,14 +72,25 @@ const Presentation: React.FC<{}> = () => {
           </IconButton>
         </div>
       </Grid>
-      <Grid item xs={false} sm={false} lg={6}>
-        <img
-          width="600px"
-          height="600px"
-          style={{ borderRadius: 32 }}
-          src="https://github.com/igormcsouza.png"
-          alt="Igor Souza"
-        />
+      <Grid item xs={12} lg={6}>
+        <div
+          style={{
+            maxWidth: "600px",
+            maxHeight: "600px",
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+            width: "100%",
+          }}
+        >
+          <img
+            width="100%"
+            height="100%"
+            style={{ borderRadius: 32 }}
+            src="https://github.com/igormcsouza.png"
+            alt="Igor Souza"
+          />
+        </div>
       </Grid>
     </Grid>
   );

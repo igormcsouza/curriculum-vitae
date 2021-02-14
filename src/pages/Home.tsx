@@ -6,7 +6,7 @@ import Skill from "../components/Skill";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     home: {
-      margin: "30px 50px",
+      margin: "30px 0px",
     },
   })
 );
