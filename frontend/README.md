@@ -1,70 +1,29 @@
-# My own Curriculum Vitae
+# React Nice Resume :page_with_curl:
 
-![integration](https://github.com/igormcsouza/resume/workflows/integration/badge.svg)
-![deploy](https://github.com/igormcsouza/curriculum-vitae/workflows/deploy/badge.svg)
+### [LIVE DEMO](https://nordicgiant2.github.io/react-nice-resume-page/index.html)
 
-My profile ...
+![img](https://github.com/nordicgiant2/react-nice-resume/blob/master/public/images/img.jpg?raw=true)
 
-## Deploy to Github Pages
+# About [`particles-bg`](https://github.com/lindelof/particles-bg) Library
+#### This project uses the react particle background component library [https://github.com/lindelof/particles-bg](https://github.com/lindelof/particles-bg). It's very simple. Anyone can be a Musketeer with it.
 
-There is this very good tutorial at 
-[create-react-app](https://create-react-app.dev/docs/deployment/#github-pages).
-Just follow it and everything should work great locally.
+![img](https://github.com/lindelof/particles-bg/raw/master/image/03.jpg?raw=true)
 
-## Available Scripts
+# Description
+This project forks from [https://github.com/tbakerx/react-resume-template](https://github.com/tbakerx/react-resume-template), I made some modifications and adjustments, thanks to the [author](https://github.com/tbakerx).
 
-In the project directory, you can run:
+![img](https://github.com/nordicgiant2/react-nice-resume/blob/master/public/images/img2.jpg?raw=true)
 
-### `npm start`
+# Run Project
+### 1. Clone the project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 2. Run the project
+```shell
+npm i
+npm start
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## `npm run deploy`
-
-It runs the publishing script to upload the build to the Github Pages, it runs
-automatically `npm run predeploy` which builds the application so it can deploy
-that to Github.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-## Known Issues
-
-### Publish using Github Actions
-
-Because actions does not have the correct username and credentials, publishing
-may be a really pain in the back side! After some research I found 
-[this](https://github.com/tschaub/gh-pages/issues/345) issue which helped me a 
-lot.
+### 3. Build
+```shell
+npm run build
+```
